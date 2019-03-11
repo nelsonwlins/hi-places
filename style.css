@@ -1,0 +1,84 @@
+body {
+    background: #f2f2f2;
+}
+
+.main-header {
+    background: #003399;
+    height: 100px;
+    padding: 20px 20px 0px 20px;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.main-header h1 {
+    font-family: 'Poppins';
+    font-size: 48px;
+}
+
+#add-places {
+    background: #99ccff;
+    padding: 4px 20px 4px 20px;
+    height: 44px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#add-places label {
+    font-size: 20px;
+    color:#262626;
+    margin-right: 8px;
+}
+
+#add-places input {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    margin-right: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+#add-places button {
+    background-color: #004466;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    white-space: nowrap;
+}
+
+#add-places button:active {
+    background-color: #99ccff;
+}
+
+#card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 85%;
+}
+
+.w3-card {
+    width: 30%;
+    margin: 16px;
+    flex-shrink: 0;
+}
+
+.w3-card header {
+    background: #6666ff;
+    color: white;
+}
+
+.w3-card header h3 {
+    font-family: 'Roboto';
+    font-size: 24px;
+}
