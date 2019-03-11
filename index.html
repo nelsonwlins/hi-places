@@ -17,21 +17,18 @@
         </header>
 
         <div>
+            <!--@submit call a function to add the values in the localStorage-->
             <form id="add-places" @submit="checkform" action="#">
                 <label for="name">Nome: </label> <input type="text" name="name" id="name" v-model="name">
                 <label for="address">Endereço: </label> <input type="text" name="address" id="address" 
-                    v-model="address" ref="autocomplete">
-                <button type="submit">Adicionar Endereço</button>     
-                <!--<p v-if="errors.length">
-                    <b>Por favor, corrija o(s) seguinte(s) erro(s):</b>
-                    <ul>
-                        <li v-for="error in errors">{{ error }}</li>
-                    </ul>
-                </p>-->           
+                    v-model="address">
+                <button type="submit">Adicionar Endereço</button>      
             </form>
         </div>
 
         <div id="card-list">
+            <!--v-for will interate the following div for every value on the places data. 
+                Places will hold the values in the localStorage-->
             <div v-for="(address, name) in places" class="w3-card w3-hover-shadow">
                 <header class="w3-container">
                     <h3>{{name}}</h3>
@@ -43,11 +40,7 @@
             </div>
         </div>
 
-        <div id="app"></div>
-
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAizTX-H4yviOyZOHjJrjCQTXoK3eKibWU&libraries=places&libraries=places"
-        async defer></script>
         <script src="./index.js"></script>
     </body>
 </html>

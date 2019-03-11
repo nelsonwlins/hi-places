@@ -13,7 +13,7 @@ body {
 }
 
 .main-header h1 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 48px;
 }
 
@@ -79,6 +79,6 @@ body {
 }
 
 .w3-card header h3 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
 }
